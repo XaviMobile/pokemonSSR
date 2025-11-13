@@ -1,5 +1,28 @@
-<nav class="top-0 absolute z-50 w-full flex justify-end px-2 bg-slate-900">
-  <a routerLinkActive="text-blue-500" routerLink="/about" class="hover:underline text-white font-bold text-xl py-4">About</a>
-  <a routerLinkActive="text-blue-500" routerLink="/pricing" class="hover:underline text-white font-bold text-xl py-4">Pricing</a>
-  <a routerLinkActive="text-blue-500" routerLink="/contact" class="hover:underline text-white font-bold text-xl py-4">Contact</a>
+<nav
+  class="text-white gap-4 top-0 absolute z-50 w-full flex justify-end px-2 py-3 bg-slate-900"
+>
+  <a
+    class="hover:underline"
+    routerLinkActive="text-blue-500 underline"
+    routerLink="/pokemons/page/1"
+  >Pokémons</a
+  >
+  <a
+    class="hover:underline"
+    routerLinkActive="text-blue-500 underline"
+    [routerLink]="['/about']"
+  >About</a
+  >
+  <a
+    class="hover:underline"
+    routerLinkActive="text-blue-500 underline"
+    routerLink="/pricing"
+  >Pricing</a
+  >
+  <a
+    class="hover:underline"
+    routerLinkActive="text-blue-500 underline"
+    routerLink="/contact"
+  >Contact</a
+  >
 </nav>

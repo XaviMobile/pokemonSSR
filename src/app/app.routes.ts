@@ -21,6 +21,13 @@ export const routes: Routes = [
       import('./pages/pricing-page/pricing-page').then(
         (m) => m.PricingPage
       ),
+  },  {
+    path: 'pokemons/page/:page',
+    loadComponent: () => import('./pages/pokemons/pokemons-page.component').then((m) => m.PokemonsPageComponent),
+  },
+  {
+    path: 'pokemons/:id',
+    loadComponent: () => import('./pages/pokemons/pokemons-page.component').then((m) => m.PokemonsPageComponent),
   },
   { path: '**', redirectTo: 'about', pathMatch: 'full' },
 ];

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     RouterLinkActive
   ],
   templateUrl: './nav-bar.html',
-  styleUrl: './nav-bar.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class NavBar {
 

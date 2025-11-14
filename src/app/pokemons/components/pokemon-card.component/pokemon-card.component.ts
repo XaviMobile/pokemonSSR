@@ -12,6 +12,9 @@ import { RouterLink } from '@angular/router';
 })
 export class PokemonCardComponent {
   public pokemon = input.required<SimplePokemon>();
+  /*  logEffect = effect(() => {
+      console.log(`Pokemon Card - ${this.pokemon().name} rendered`);
+    })*/
 
   public readonly pokemonImage = computed(
     () =>

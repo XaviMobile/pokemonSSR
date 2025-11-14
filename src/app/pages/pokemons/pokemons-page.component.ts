@@ -27,7 +27,7 @@ export class PokemonsPageComponent {
   public currentPage = toSignal<number>(
     this.route.params.pipe(
       map((params) => params['page'] ?? '1'),
-      map((page) => (isNaN(+page) ? 1 : +page)),
+      map((page) => (isNaN(+page) ? 1 : + page)),
       map((page) => Math.max(1, page))
     )
   );
